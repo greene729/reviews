@@ -30,7 +30,12 @@ public class ReviewControllerTest {
 
 	@Test
 	public void shouldBeOkWhenAccessingReview() throws Exception {
-		mockMvc.perform(get("/review/1")).andExpect(status().isOk());
+		mockMvc.perform(get("/reviews/1")).andExpect(status().isOk());
+	}
+
+	@Test
+	public void shouldReturnReviewTemplateWhenAccessingReview() throws Exception {
+		mockMvc.perform(get("/reviews/1")).andExpect(view().name("review"));
 	}
 
 }

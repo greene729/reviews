@@ -1,4 +1,4 @@
-package org.wecancodeit.studentroster.repositories;
+package org.wecancodeit.review.repositories;
 
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.hasItems;
@@ -8,8 +8,8 @@ import static org.junit.Assert.assertThat;
 import java.util.Collection;
 
 import org.junit.Test;
+import org.wecancodeit.review.repositories.ReviewRepository;
 import org.wecancodeit.reviews.model.Review;
-import org.wecancodeit.studentroster.repositories.ReviewRepository;
 
 public class ReviewRepositoryTest {
 

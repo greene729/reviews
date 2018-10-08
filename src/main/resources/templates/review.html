@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title th:text="${review.name}">Review</title>
+	<title th:text="${review.title}">Review</title>
 </head>
 <body>
 	<header>
-		<h1 th:text="${review.name}">Review</h1>
+		<h1 th:text="${review.title}">Review</h1>
 			<nav>
 				<ul>
 					<li><a href="/reviews">Reviews</a></li>
@@ -14,9 +14,9 @@
 		</header>
 		<main>
 			<h3 th:text="${review.title}">Title</h3>
-			<img src=@{|\images\{review.imageurl}|}>
+			<img th:src=@{|.\images\{review.imageurl}|}>
 			<h4 th:text="${review.category}">Category</h4>
-			<p th:text="${review.content"}>Content</p>
-
+			<p th:text="${review.content}">Content</p>
+		</main>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package org.wecancodeit.studentroster.repositories;
+package org.wecancodeit.review.repositories;
 
 import java.util.Collection;
 import java.util.HashMap;
