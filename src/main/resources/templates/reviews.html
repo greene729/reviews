@@ -7,12 +7,7 @@
 
 	<header>
 		<h1>CanHazWhatevz Places to Sleep Guide</h1>
-		<nav>
-			<ul>
-				<li><a href="/reviews">All Reviews</a></li>
-				<li th:each="review : ${reviews}"><a th:href="|/reviews/${review.id}|" th:text="${review.title}">Review</a></li>			
-			</ul>
-		</nav>
+		
 	</header>
 	<main>
 		<ul>

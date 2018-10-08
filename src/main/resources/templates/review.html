@@ -14,7 +14,7 @@
 		</header>
 		<main>
 			<h3 th:text="${review.title}">Title</h3>
-			<img th:src=@{|.\images\{review.imageurl}|}>
+			<img th:src="@{|/images/${review.image}|}" alt="Sleeping Spot" style="width:300px;height:300px">
 			<h4 th:text="${review.category}">Category</h4>
 			<p th:text="${review.content}">Content</p>
 		</main>
